@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>여명 마을 - 세라피나</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="scene">
+    <img class="scene__bg" src="assets/scene-background.jpg" alt="여명 마을 광장에 서 있는 세라피나" />
+    <div class="scene__vignette"></div>
+    <img class="nameplate" src="assets/npc-nameplate.png" alt="세라피나 (Seraphina)" />
+    <span class="status-indicator" id="status-indicator">
+      <span class="status-dot"></span>대화 가능
+    </span>
+  </div>
+
+  <div class="chat-panel">
+    <div class="chat-log" id="chat-log" aria-live="polite"></div>
+
+    <div class="typing-indicator" id="typing-indicator" hidden>
+      <span></span><span></span><span></span>
+      <em>세라피나가 생각하는 중...</em>
+    </div>
+
+    <form class="chat-input" id="chat-form" autocomplete="off">
+      <input
+        type="text"
+        id="chat-input"
+        placeholder="세라피나에게 말을 걸어보세요..."
+        maxlength="300"
+        required
+      />
+      <button type="submit" id="chat-send">말하기</button>
+    </form>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
