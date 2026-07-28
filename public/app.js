@@ -87,9 +87,6 @@
     document.querySelector('.scene').classList.add('scene--fallback');
   });
 
-  watchImageFallback(document.querySelector('.nameplate'), () => {
-    document.querySelector('.nameplate').classList.add('is-missing');
-  });
 
   // Opening greeting.
   appendMessage('assistant', OPENING_LINE);
